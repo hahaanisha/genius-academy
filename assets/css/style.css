@@ -846,8 +846,8 @@
   
   .back-top-btn {
     position: fixed;
-    bottom: 40px;
-    right: 30px;
+    bottom: 60px;
+    right: 100px;
     background-color: var(--kappel);
     color: var(--white);
     font-size: 20px;
@@ -872,7 +872,29 @@
   /*-----------------------------------*\
     #MEDIA QUERIES
   \*-----------------------------------*/
-  
+  /**
+   * responsive for lesser than 575px screen
+   */
+   @media (max-width: 575px) {
+
+    .grid-container {
+      display: flex;
+      overflow-x: scroll;
+    }
+    .grid-container::-webkit-scrollbar{
+      height: 0%;
+    }
+
+    .testimonial-block{
+      display: flex;
+      overflow-x: scroll;
+    }
+    .testimonial-block::-webkit-scrollbar{
+      height: 0%;
+    }
+
+   }
+
   /**
    * responsive for large than 575px screen
    */
@@ -888,7 +910,9 @@
       width: 100%;
       margin-inline: auto;
     }
-  
+    
+    
+    
     .grid-list { grid-template-columns: 1fr 1fr; }
   
     :is(.course, .blog) .grid-list { grid-template-columns: 1fr; }
@@ -926,7 +950,16 @@
      */
   
     .stats-card { padding: 40px 30px; }
+  /**
+     * Success stories
+     */
   
+     
+     .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* 5 students per row */
+      gap: 20px; /* Adjust as needed */
+    }
   
   
     /**
@@ -985,7 +1018,16 @@
   
     :is(.course, .blog) .grid-list { grid-template-columns: 1fr 1fr; }
   
+  /**
+     * Success stories
+     */
   
+     
+     .grid-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr); /* 5 students per row */
+      gap: 20px; /* Adjust as needed */
+    }
   
     /**
      * HEADER
@@ -1053,6 +1095,8 @@
       right: -70px;
     }
   
+
+    
   
   
     /**
@@ -1132,6 +1176,16 @@
     }
   
   
+   /**
+     * Success stories
+     */
+  
+     
+     .grid-container {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr); /* 5 students per row */
+      gap: 20px; /* Adjust as needed */
+    }
   
     /**
      * VIDEO
