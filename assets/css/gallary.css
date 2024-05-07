@@ -1,0 +1,224 @@
+:root {
+   --genius-red: rgb(233, 61, 61)
+  }
+  
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+.event-img > img{
+    width: 420px;
+    height: auto;
+    border-radius: 10px;
+    
+}
+.event-container{
+    padding:0px;
+    gap: 20px;
+    
+}
+.event-title{
+    text-align: center;
+    padding: 20px;
+}
+
+.event-title>.span{
+    color: var(--genius-red);
+}
+
+.main-event-container{
+
+    align-items: center;
+    justify-content: center;
+    display: grid;
+      grid-template-columns: repeat(3, 1fr); /* 5 students per row */
+      gap: 10px; /* Adjust as needed */
+}
+
+.partyElement1{
+    width: 150px;
+    margin-left: 200px;
+    margin-top: 0px;
+}
+.partyElement2{
+    width: 150px;
+    margin-right: 200px;
+    /* margin-top: 50px; */
+}
+.event-head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+  /*-----------------------------------*\
+    #MEDIA QUERIES
+  \*-----------------------------------*/
+  /**
+   * responsive for lesser than 575px screen
+   */
+   @media (max-width: 575px) {
+    .event-img > img{
+        width: 300px;
+        height: auto;
+        
+    }
+    .main-event-container{
+        margin: 0%;
+        display: flex;
+        overflow-x: scroll;
+    }
+   }
+
+  /**
+   * responsive for large than 575px screen
+   */
+  
+  @media (min-width: 575px) {
+  
+    /**
+     * REUSED STYLE
+     */
+  
+    .container {
+      max-width: 520px;
+      width: 100%;
+      margin-inline: auto;
+    }
+    
+    
+    
+  }
+  
+  
+  
+  
+  
+  /**
+   * responsive for large than 768px screen
+   */
+  
+  @media (min-width: 768px) {
+  
+    /**
+     * CUSTOM PROPERTY
+     */
+  
+    :root {
+  
+      /**
+       * typography
+       */
+  
+      --fs-1: 4.6rem;
+      --fs-2: 3.8rem;
+  
+    }
+  
+  
+  
+    /**
+     * REUSED STYLE
+     */
+  
+    .container { max-width: 720px; }
+  
+    .btn { padding: 15px 30px; }
+  
+    :is(.course, .blog) .grid-list { grid-template-columns: 1fr 1fr; }
+  
+  }
+  
+  
+  
+  
+  
+  /**
+   * responsive for large than 992px screen
+   */
+  
+  @media (min-width: 992px) {
+  
+    /**
+     * CUSTOM PROPERTY
+     */
+  
+    :root {
+  
+      /**
+       * typography
+       */
+  
+      --fs-1: 5.5rem;
+      --fs-2: 4.5rem;
+  
+    }
+  
+  
+  
+    /**
+     * REUSED STYLE
+     */
+  
+    .container { max-width: 960px; }
+  
+    .grid-list { grid-template-columns: repeat(4, 1fr); }
+  
+    :is(.course, .blog) .grid-list { grid-template-columns: repeat(3, 1fr); }
+  
+  
+  }
+  
+  
+  
+  
+  
+  /**
+   * responsive for large than 1200px screen
+   */
+  
+  @media (min-width: 1200px) {
+  
+    /**
+     * CUSTOM PROPERTY
+     */
+  
+    :root {
+  
+      /**
+       * typography
+       */
+  
+      --fs-1: 6.5rem;
+  
+      /**
+       * spacing
+       */
+  
+      --section-padding: 120px;
+  
+    }
+  
+  
+  
+    /**
+     * REUSED STYLE
+     */
+  
+    .container { max-width: 1185px; }
+  
+    .shape { display: block; }
+  
+    .about-content,
+    .video-card,
+    .blog { position: relative; }
+  
+  
+  
+  
+  }
