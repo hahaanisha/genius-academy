@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.container-body {
+    text-align: center;
+    margin-top: 120px;
+}
+.group-photo {
+    width: 50%; 
+    display: block;
+    margin: 0 auto;
+}
+.main-text {
+    font-size: 42px;
+    margin-top: 20px;
+}
+.main-para{
+    font-size: 20px;
+  margin-left: 200px;  
+  margin-right: 200px;
+  flex-direction: column;
+  margin-bottom: 75px;
+}
+.mission-vision{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    text-align: center;
+}
+.mission,
+.vision {
+    width: calc(70% - 80px); 
+    margin: 0 55px; 
+}
+.mission .p{
+    text-align:justify;
+}
+
+.tape-top-left, .tape-bottom-right {
+    position: absolute;
+    z-index: 1; 
+}
+.tape-top-left {
+    top: 70px;
+    left: 250px;
+}
+.tape-bottom-right {
+    bottom: 50px;
+    right: 270px;
+}
+.tape-img{
+    width: 200px;
+    height: 150px;
+}
+
+/* mission and vision text */
+.section-text {
+    font-size: var(--fs-5);
+    text-align: center;
+    margin-block: 15px 25px;
+  }
+  .about-item {
+    margin-block: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .about-item ion-icon {
+    color: var(--selective-yellow);
+    font-size: 20px;
+    --ionicon-stroke-width: 50px;
+  }
+  
+  .about-item .span {
+    color: var(--eerie-black-1);
+    font-family: var(--ff-league_spartan);
+  }
