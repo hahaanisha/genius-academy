@@ -889,6 +889,12 @@
       display: flex;
       overflow-x: scroll;
     }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* 5 students per row */
+      gap: 20px; /* Adjust as needed */
+    }
     .testimonial-block::-webkit-scrollbar{
       height: 0%;
     }
