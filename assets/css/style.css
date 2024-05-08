@@ -660,6 +660,8 @@
     position: relative;
     border-top-right-radius: 80px;
     border-bottom-left-radius: 120px;
+    width:300px;
+background-color: white;
   }
   
   .video .play-btn {
@@ -677,14 +679,25 @@
     animation: pulse 3s ease infinite;
   }
   
+  .hidden{
+    
+    margin: 0px;
+    align-self: center;
+    width:300px;
+    height: auto;
+    border-top-right-radius: 60px;
+    border-bottom-left-radius: 120px;
+  }
+
   @keyframes pulse {
     0% { box-shadow: 0 0 0 0 var(--white_50); }
     100% { box-shadow: 0 0 0 20px transparent; }
   }
   
   .video-banner::after {
+    
     inset: 0;
-    background-color: var(--black_30);
+    /* background-color: var(--black_30); */
   }
   
   
@@ -897,6 +910,18 @@
     }
     .testimonial-block::-webkit-scrollbar{
       height: 0%;
+    }
+    .hidden{
+      
+      /* margin: 0px; */
+      align-self: center;
+      width:250px;
+      height: auto;
+      border-top-right-radius: 60px;
+      border-bottom-left-radius: 120px;
+    }
+    .video-banner {
+      margin-left: 50px;
     }
 
    }
