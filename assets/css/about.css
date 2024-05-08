@@ -21,10 +21,13 @@ body {
 }
 .main-para{
     font-size: 20px;
-  margin-left: 200px;  
-  margin-right: 200px;
+    display: flex;
+    text-align: center;
+    padding: 100px;
+  /* margin-left: 200px;   */
+  /* margin-right: 200px; */
   flex-direction: column;
-  margin-bottom: 75px;
+  /* margin-bottom: 75px; */
 }
 .mission-vision{
     display: flex;
@@ -85,4 +88,51 @@ body {
   .subHeading{
     /* color: var(--light_pink); */
     color: rgb(233, 55, 85);
+}
+
+@media (max-width: 575px) {
+    .group-photo{
+        width: 70%;
+    }
+    .main-text{
+        font-size: 30px;
+    }
+    .tape-img{
+        display: none;
+    }
+    .main-para{
+        width: 80%;
+        font-size: 15px;
+        padding: 20px;
+        display: inline;
+        text-align: center;
+
+    }
+    .mission-vision{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1px;
+    }
+    .desc{
+       
+        width: 80%;
+    }
+    .mission,
+.vision {
+
+    width: calc(95% - 20px); 
+    margin: 0 0px; 
+}
+.mission,.vision > p{
+    text-align:center;
+}
+.mission,.vision > .desc{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
 }
