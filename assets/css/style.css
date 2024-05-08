@@ -644,9 +644,6 @@
   }
   
   
-  
-  
-  
   /*-----------------------------------*\
     #VIDEO
   \*-----------------------------------*/
@@ -727,6 +724,13 @@ background-color: white;
     text-transform: uppercase;
   }
   
+  /*-------------------
+  RANKERS
+  -------------------*/
+
+  .student-position{
+    color: var(--kappel);
+  }
   
   
   
@@ -749,8 +753,8 @@ background-color: white;
   }
   
   .student-image {
-    width: 100px; /* Adjust size as needed */
-    height: 100px; /* Adjust size as needed */
+    width: 150px; /* Adjust size as needed */
+    height: 150px; /* Adjust size as needed */
     border-radius: 50%; /* Circular shape */
     overflow: hidden; /* Ensure circular shape */
     margin: 0 auto;
@@ -774,6 +778,9 @@ background-color: white;
     font-style: italic;
   }
   
+  .student-percentage{
+    color: rgb(225, 55, 55);
+  }
   
   
   
@@ -922,6 +929,17 @@ background-color: white;
     }
     .video-banner {
       margin-left: 50px;
+    }
+
+    .student-image{
+      height: 100px;
+      width: 100px;
+    }
+    .student-name{
+      font-size: 15px;
+    }
+    .student-position{
+      font-size: 15px;
     }
 
    }
@@ -1227,7 +1245,9 @@ background-color: white;
       margin-inline: auto;
     }
   
-  
+    .viewMore{
+      display: none;
+    }
   
     /**
      * FOOTER
@@ -1369,4 +1389,8 @@ background-color: white;
       left: 0;
     }
   
+    .viewMore{
+      display: none;
+    }
+
   }
