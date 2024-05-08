@@ -78,10 +78,10 @@ body {
   .event-img > img {
     width: 300px;
     height: auto;
-    animation: 7s slide infinite alternate;
+    animation: 7s slide alternate;
   }
   .event-img1>img{
-    animation: 7s slide infinite alternate-reverse;
+    animation: 7s slide alternate-reverse;
   }
   .main-event-container {
     display: flex;
@@ -119,23 +119,29 @@ body {
    * responsive for large than 575px screen
    */
 
-@media (min-width: 575px) {
+@media (min-width: 575px) and (max-width: 768px) {
   /**
      * REUSED STYLE
      */
      .event-img > img {
       width: 300px;
       height: auto;
-      animation: 7s slide infinite alternate;
+      animation: 7s slide alternate;
     }
     .event-img1>img{
-      animation: 7s slide infinite alternate-reverse;
+      animation: 7s slide alternate-reverse;
     }
     .main-event-container {
       display: flex;
       flex-direction: row;
       overflow-x: scroll;
       
+    }
+    .eve1{
+      margin-left: 600px;
+    }
+    .main-event-container::-webkit-scrollbar{
+      display: none;
     }
     .c1,
     .c2 {
@@ -166,7 +172,7 @@ body {
    * responsive for large than 768px screen
    */
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 992px){
   /**
      * CUSTOM PROPERTY
      */
@@ -191,7 +197,6 @@ body {
     display: flex;
     flex-direction: row;
     width: 100%;
-    
   }
   .c1,
   .c2 {
@@ -199,13 +204,11 @@ body {
     justify-content: center;
     display: flex;
     gap: 10px; /* Adjust as needed */
-    overflow-x: scroll;
     
   }
   .c1,
   .c2::-webkit-scrollbar{
     display: none;
-    height: 0%;
   }
   .partyElement1,
   .partyElement2 {
