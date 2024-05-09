@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genius Academy</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&family=Poppins:wght@400;500&display=swap"
+    rel="stylesheet">
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+</head>
+
+<body>
+    <header class="header" data-header>
+        <div class="container">
+    
+          <a href="#" class="logo">
+            <img src="./assets/images/logo.png" width="162" height="50" alt="EduWeb logo">
+          </a>
+    
+          <nav class="navbar" data-navbar>
+    
+            <div class="wrapper">
+              <a href="#" class="logo">
+                <img src="./assets/images/logo.png" width="162" height="50" alt="genius logo">
+              </a>
+    
+              <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+                <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+              </button>
+            </div>
+    
+            <ul class="navbar-list">
+    
+              <li class="navbar-item">
+                <a href="./home.html" class="navbar-link" data-nav-link>Home</a>
+              </li>
+              <li class="navbar-item">
+                <a href="./school.html" class="navbar-link" data-nav-link>School</a>
+              </li>
+              <li class="navbar-item">
+                <a href="./about.html" class="navbar-link" data-nav-link>About</a>
+              </li>
+              <li class="navbar-item">
+                <a href="./results.html" class="navbar-link" data-nav-link>Results</a>
+              </li>
+              <li class="navbar-item">
+                <a href="./courses.html" class="navbar-link" data-nav-link>Courses</a>
+              </li>
+    
+              <li class="navbar-item">
+                <a href="./gallary.html" class="navbar-link" data-nav-link>Gallery</a>
+              </li>
+    
+              <li class="navbar-item">
+                <a href="./faq.html" class="navbar-link" data-nav-link>FAQs</a>
+              </li>
+    
+              <li class="navbar-item">
+                <a href="./contact.html" class="navbar-link" data-nav-link>Contact</a>
+              </li>
+    
+            </ul>
+    
+          </nav>
+    
+          <div class="header-actions">
+    
+            <button class="header-action-btn" aria-label="open menu" data-nav-toggler>
+              <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+            </button>
+    
+          </div>
+    
+          <div class="overlay" data-nav-toggler data-overlay></div>
+    
+        </div>
+      </header>
+
+<!-- HERO SECTION: -->
+<section class="section hero has-bg-image" id="home" aria-label="home"
+        style="background-image: url('./assets/images/hero-bg.svg')">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <h1 class="h1 section-title">
+              Your Path to <span class="span">Success</span> Starts Here..
+            </h1>
+
+            <p class="hero-text">
+              Lay the foundational stones of your career with Genius Academy
+            </p>
+
+            <div class="btn-container">
+              <a href="#courses" class="btn has-before">
+                <span class="span">Find courses</span>
+                <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+              </a>
+              <a href="./contact.html" class="btn has-before">
+                <span class="span">Contact Us</span>
+                <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+              </a>
+            </div>
+            
+          </div>
+
+          <figure class="hero-banner">
+
+            <div class="img-holder one" style="--width: 270; --height: 300;">
+              <img src="./assets/images/SCHOOL1.png" width="270" height="300" alt="hero banner" class="img-cover">
+            </div>
+
+            <div class="img-holder two" style="--width: 240; --height: 370;">
+              <img src="./assets/images/SCHOOL2.svg" width="240" height="370" alt="hero banner" class="img-cover">
+            </div>
+<!-- 
+            <img src="./assets/images/hero-shape-1.svg" width="380" height="190" alt="" class="shape hero-shape-1"> -->
+
+            <img src="./assets/images/hero-shape-2.png" width="622" height="551" alt="" class="shape hero-shape-2">
+
+          </figure>
+
+        </div>
+      </section>
+      
+<!-- CATEGORIES: -->
+<section class="section category" aria-label="category" id="courses">
+    <div class="container">
+
+      <p class="section-subtitle">Categories</p>
+
+      <h2 class="h2 section-title">
+        Best <span class="span">Classes</span> For Best Results.
+      </h2>
+
+      <p class="section-text">
+        Discover Our Extensive Range of Classes
+      </p>
+
+      <ul class="grid-list" style=" display: flex; justify-content: center; align-items: center;">
+
+        <li>
+          <div class="category-card" style="--color: 170, 75%, 41%">
+
+            <div class="card-icon">
+              <img src="./assets/images/category-1.svg" width="40" height="40" loading="lazy"
+                alt="Online Degree Programs" class="img">
+            </div>
+
+            <h3 class="h3">
+              <a href="./courses.html" class="card-title">Std 8th</a>
+            </h3>
+
+            <p class="card-text">
+                Lay the groundwork for future success with comprehensive courses tailored to the 8th-grade curriculum.
+            </p>
+
+            <span class="card-badge">3 Batches</span>
+
+          </div>
+        </li>
+      
+
+        <li>
+          <div class="category-card" style="--color: 351, 83%, 61%">
+
+            <div class="card-icon">
+              <img src="./assets/images/category-2.svg" width="40" height="40" loading="lazy"
+                alt="Non-Degree Programs" class="img">
+            </div>
+
+            <h3 class="h3">
+              <a href="./courses.html#mhtcet" class="card-title">Std 9th</a>
+            </h3>
+
+            <p class="card-text">
+                Prepare effectively for higher studies with specialized courses designed to strengthen your academic skills.
+            </p>
+
+            <span class="card-badge">4 Batches</span>
+
+          </div>
+        </li>
+
+        <li>
+          <div class="category-card" style="--color: 229, 75%, 58%">
+
+            <div class="card-icon">
+              <img src="./assets/images/category-3.svg" width="40" height="40" loading="lazy"
+                alt="Off-Campus Programs" class="img">
+            </div>
+
+            <h3 class="h3">
+              <a href="./courses.html#JEE" class="card-title">Std 10th</a>
+            </h3>
+
+            <p class="card-text">
+                Excel in the crucial board exams with targeted courses crafted to meet the specific requirements of the 10th-grade syllabus.
+            </p>
+
+            <span class="card-badge">4 batches</span>
+
+          </div>
+        </li>
+
+    </div>
+  </section>
+
+<!-- ABOUT US -->
+
+<section class="section about" id="about" aria-label="about">
+    <div class="container">
+
+      <figure class="about-banner">
+
+        <div class="img-holder" style="--width: 520; --height: 370;">
+          <img src="./assets/images/about.png" width="520" height="370" loading="lazy" alt="about banner"
+            class="img-cover">
+        </div>
+        <img src="./assets/images/about-shape-2.svg" width="371" height="220" loading="lazy" alt=""
+          class="shape about-shape-2">
+
+        <img src="./assets/images/about-shape-3.png" width="722" height="528" loading="lazy" alt=""
+          class="shape about-shape-3">
+
+      </figure>
+
+      <div class="about-content">
+
+        <p class="section-subtitle">About Us</p>
+
+        <h2 class="h2 section-title">
+          Over 20 Years of <span class="span">Success</span> in JEE, NEET, MHT-CET
+        </h2>
+
+        <p class="section-text">
+          At Genius Academy, we ignite potential, inspire confidence, and nurture 
+          success through personalized guidance and advanced teaching methods.
+        </p>
+
+        <ul class="about-list">
+
+          <li class="about-item">
+            <ion-icon name="checkmark-done-outline" aria-hidden="true"></ion-icon>
+
+            <span class="span">Expert Teachers</span>
+          </li>
+
+          <li class="about-item">
+            <ion-icon name="checkmark-done-outline" aria-hidden="true"></ion-icon>
+
+            <span class="span">PQPs and Weekly Tests</span>
+          </li>
+
+          <li class="about-item">
+            <ion-icon name="checkmark-done-outline" aria-hidden="true"></ion-icon>
+
+            <span class="span">Guided Mentorship</span>
+          </li>
+
+        </ul>
+        <a href="#" class="btn has-before">
+          <span class="span">Learn more</span>
+
+          <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+        </a>
+        <img src="./assets/images/about-shape-4.svg" width="100" height="100" loading="lazy" alt=""
+          class="shape about-shape-4">
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- VIDEO SECTION: -->
+  <h2 class="h2 section-title" style="margin-top: 30px;">GET TO HEAR FROM OUR TEAM</h2>
+  <br>
+  <br>
+  
+  <section class="video has-bg-image" aria-label="video"
+    style="background-image: url('./assets/images/founder.mp4')">
+    <div class="container">
+
+      <div class="video-card">
+
+        <div class="video-banner img-holder has-after" style="--width: ; --height: ;" >
+            <video class="hidden" width="1000" controls poster="./assets/images/videoThumbnail.png">
+              <source  src="./assets/images/homeVideo1.mp4" type="video/mp4" class="video-cover" width="auto" height="100px">
+           </video>
+            
+          <button class="play-btn" aria-label="play video">
+            <ion-icon name="play" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <img src="./assets/images/video-shape-1.png" width="1089" height="605" loading="lazy" alt=""
+          class="shape video-shape-1">
+
+        <img src="./assets/images/video-shape-2.png" width="158" height="174" loading="lazy" alt=""
+          class="shape video-shape-2">
+
+      </div>
+
+    </div>
+  </section>
+<!-- FOOTER: -->
+<footer class="footer" id="footer" style="background-image: url('./assets/images/footer-bg.png')">
+
+    <div class="footer-top section">
+      <div class="container grid-list">
+
+        <div class="footer-brand">
+
+          <a href="./home.html" class="logo">
+            <img src="./assets/images/logo-light.png" width="162" height="50" alt="EduWeb logo">
+          </a>
+
+          <p class="footer-brand-text">
+            We, at Genius Academy, not only aim at providing you with the best guidance to shape up your career, but also aim at making it immune to the changing scenarios in the career.          </p>
+
+          <div class="wrapper">
+            <span class="span">Add:</span>
+
+            <address class="address">Kalyan & Badlapur</address>
+          </div>
+
+          <div class="wrapper">
+            <span class="span">Call:</span>
+
+            <a href="tel:+91 9867970240" class="footer-link">+91 9867970240</a>
+          </div>
+
+          <div class="wrapper">
+            <span class="span">Email:</span>
+
+            <a href="mailto:thanksyougenius@gmail.com" class="footer-link">thanksyougenius@gmail.com</a>
+          </div>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Online Platform</p>
+          </li>
+
+          <li>
+            <a href="./about.html" class="footer-link">About</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Courses</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Instructors</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Events</a>
+          </li>
+
+          
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Links</p>
+          </li>
+
+          <li>
+            <a href="./contact.html" class="footer-link">Contact Us</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Gallery</a>
+          </li>
+
+
+          <li>
+            <a href="./faq.html" class="footer-link">FAQ's</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Coming Soon</a>
+          </li>
+
+        </ul>
+
+        <div class="footer-list">
+
+          <p class="footer-list-title">Contacts</p>
+
+          <p class="footer-list-text">
+            Enter your email address to register to our newsletter subscription
+          </p>
+
+          <form action="" class="newsletter-form">
+            <input type="email" name="email_address" placeholder="Your email" required class="input-field">
+
+            <button type="submit" class="btn has-before">
+              <span class="span">Subscribe</span>
+
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </form>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          © 2024 Genius Academy. All rights reserved.</a>
+        </p>
+
+      </div>
+    </div>
+
+  </footer>
+</body>
+</html>
