@@ -1,0 +1,15 @@
+body{
+    margin-top:60px ;
+}
+.result-title{
+    text-align: center;
+    color: var(--kappel);
+    font-size: larger;
+    font-weight: 900;
+}
+.rankers{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
