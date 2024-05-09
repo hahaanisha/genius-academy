@@ -942,6 +942,14 @@ RANKERS
     font-size: 15px;
   }
 
+  .developers{
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    gap: 2px;
+  }
+
  }
 
 /**
@@ -1393,4 +1401,11 @@ RANKERS
     display: none;
   }
 
+}
+
+.developers{
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  gap: 5px;
 }
