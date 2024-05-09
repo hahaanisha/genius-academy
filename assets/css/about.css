@@ -44,23 +44,6 @@ body {
     text-align:justify;
 }
 
-.tape-top-left, .tape-bottom-right {
-    position: absolute;
-    z-index: 1; 
-}
-.tape-top-left {
-    top: 70px;
-    left: 380px;
-}
-.tape-bottom-right {
-    bottom: 170px;
-    right: 380px;
-}
-.tape-img{
-    width: 200px;
-    height: 150px;
-}
-
 /* mission and vision text */
 .section-text {
     font-size: var(--fs-5);
