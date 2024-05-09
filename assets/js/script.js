@@ -67,10 +67,10 @@ document.querySelector('.play-btn').addEventListener('click', function() {
     var video = document.querySelector('.video-card video');
     if (video.paused) {
       video.play();
-      // this.style.display = 'none';
+      this.style.display = 'none';
     }
-    else if (video.play){
-      video.pause();
-      // this.style.display='none';
-    }
+    // else if (video.play){
+    //   video.pause();
+    //   // this.style.display='none';
+    // }
   });
