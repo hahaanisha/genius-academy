@@ -208,7 +208,7 @@ color: var(--kappel);
     gap: 20px;
   }
 
-  .grid-list{
+  .course-list{
     display: flex;
     flex-direction: column;
   }
@@ -216,6 +216,7 @@ color: var(--kappel);
   .mhtcetList > p{
     color: var(--kappel);
   }
+  
 
   
   /*-----------------------------------*\
@@ -253,6 +254,7 @@ color: var(--kappel);
         align-items: center;
         justify-content: center;
         border-radius: 5px;
+        font-size: 12px;
     
     }
     .course{
