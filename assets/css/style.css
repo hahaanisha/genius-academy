@@ -863,11 +863,24 @@ RANKERS
 /*-----------------------------------*\
   #BACK TO TOP
 \*-----------------------------------*/
-
-.back-top-btn {
+.back-top-btn1 {
   position: fixed;
   bottom: 60px;
   right: 100px;
+  background-color: var(--kappel);
+  color: var(--white);
+  font-size: 20px;
+  padding: 15px;
+  border-radius: var(--radius-circle);
+  z-index: 3;
+  opacity: 0;
+  pointer-events: none;
+  transition: var(--transition-1);
+}
+.back-top-btn {
+  position: fixed;
+  bottom: 60px;
+  right: 0px;
   background-color: var(--kappel);
   color: var(--white);
   font-size: 20px;
