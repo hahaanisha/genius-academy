@@ -98,9 +98,7 @@ body {
     overflow-x: scroll;
     
   }
-  .main-event-container1{
-    
-  }
+  
   .main-event-container::-webkit-scrollbar {
     display: none;
   }
