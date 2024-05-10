@@ -1,40 +1,61 @@
-body{
-    margin-top:60px ;
+body {
+  margin-top: 60px;
 }
-.result-title{
-    text-align: center;
-    color: var(--kappel);
-    font-size: larger;
-    font-weight: 900;
-}
-.rankers{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+.result-title {
+  text-align: center;
+  color: var(--kappel);
+  font-size: larger;
+  font-weight: 900;
+  
 }
 
-.MHTCET{
-    display: flex;
-    flex-direction: column;
+.resultsPage{
+    padding-top: 50px;
 }
-.CET1{
-    padding: 50px 0px;
-    display: flex;
-    flex-direction: row;
-    gap: 120px;
-    justify-content: center;
-    align-items: center;
+
+.rankers {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
-.CET2{
+
+.MHTCET {
+  display: flex;
+  flex-direction: column;
+}
+.CET1 {
+  padding: 50px 0px;
+  display: flex;
+  flex-direction: row;
+  gap: 120px;
+  justify-content: center;
+  align-items: center;
+}
+.CET2 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 100px;
+}
+
+.footer{
+    margin-bottom: 0px;
+}
+/*-----------------------------------*\
+    #MEDIA QUERIES
+  \*-----------------------------------*/
+/**
+   * responsive for lesser than 575px screen
+   */
+@media (max-width: 575px) {
+    
+  .CET1 {
     display: grid;
-    grid-template-columns: repeat(5,1fr);
-    gap: 100px;
-}
-.last{
-    margin-left: 40%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+    grid-template-columns: repeat(2,1fr);
+    gap: 25px;
+  }
+  .CET2{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+  }
 }
