@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Genius Academy</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/school.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&family=Poppins:wght@400;500&display=swap"
@@ -140,7 +142,7 @@
         Discover Our Extensive Range of Classes
       </p>
 
-      <ul class="grid-list" style=" display: flex; justify-content: center; align-items: center;">
+      <ul class="grid-list school-list" style=" display: flex; justify-content: center; align-items: center;">
 
         <li>
           <div class="category-card" style="--color: 170, 75%, 41%">
@@ -158,7 +160,7 @@
                 Lay the groundwork for future success with comprehensive courses tailored to the 8th-grade curriculum.
             </p>
 
-            <span class="card-badge">3 Batches</span>
+            <span class="card-badge"></span>
 
           </div>
         </li>
@@ -180,7 +182,7 @@
                 Prepare effectively for higher studies with specialized courses designed to strengthen your academic skills.
             </p>
 
-            <span class="card-badge">4 Batches</span>
+            <span class="card-badge"></span>
 
           </div>
         </li>
@@ -201,7 +203,7 @@
                 Excel in the crucial board exams with targeted courses crafted to meet the specific requirements of the 10th-grade syllabus.
             </p>
 
-            <span class="card-badge">4 batches</span>
+            <span class="card-badge"></span>
 
           </div>
         </li>
@@ -217,7 +219,7 @@
       <figure class="about-banner">
 
         <div class="img-holder" style="--width: 520; --height: 370;">
-          <img src="./assets/images/about.png" width="520" height="370" loading="lazy" alt="about banner"
+          <img src="./assets/images/schoolGrp.jpg" width="520" height="370" loading="lazy" alt="about banner"
             class="img-cover">
         </div>
         <img src="./assets/images/about-shape-2.svg" width="371" height="220" loading="lazy" alt=""
@@ -233,7 +235,7 @@
         <p class="section-subtitle">About Us</p>
 
         <h2 class="h2 section-title">
-          Over 20 Years of <span class="span">Success</span> in JEE, NEET, MHT-CET
+          Over Grand <span class="span">Success</span> in SSC
         </h2>
 
         <p class="section-text">
@@ -396,19 +398,7 @@
 
         <p class="footer-list-title">Contacts</p>
 
-        <p class="footer-list-text">
-          Enter your email address to register to our newsletter subscription
-        </p>
-
-        <form action="" class="newsletter-form">
-          <input type="email" name="email_address" placeholder="Your email" required class="input-field">
-
-          <button type="submit" class="btn has-before">
-            <span class="span">Subscribe</span>
-
-            <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-          </button>
-        </form>
+        
 
         <ul class="social-list">
 
@@ -461,5 +451,35 @@
   </div>
 
 </footer>
+
+  <!--- #BACK TO TOP-->
+  <a href="#top" class="back-top-btn1" aria-label="back top top" data-back-top-btn>
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
+
+  <script src="./assets/js/script.js" defer></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
+
+
+<script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+<script>
+  window.botpressWebChat.init({
+      "composerPlaceholder": "Genius Bot",
+      "botConversationDescription": "How may I assist you",
+      "botId": "7bf7e304-50a6-4054-8c90-d463545a7397",
+      "hostUrl": "https://cdn.botpress.cloud/webchat/v1",
+      "messagingUrl": "https://messaging.botpress.cloud",
+      "clientId": "7bf7e304-50a6-4054-8c90-d463545a7397",
+      "webhookId": "f7e5e3bf-e719-432f-a6fc-f51a72fb50a7",
+      "lazySocket": true,
+      "themeName": "prism",
+      "frontendVersion": "v1",
+      "useSessionStorage": true,
+      "theme": "prism",
+      "themeColor": "#98b4d4"
+  });
+</script>
 </html>
