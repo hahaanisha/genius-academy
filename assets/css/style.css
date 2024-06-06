@@ -215,7 +215,7 @@ body {
 
 .img-holder {
   aspect-ratio: var(--width) / var(--height);
-  background-color: var(--light-gray);
+  background-color: white;
   overflow: hidden;
 }
 
@@ -897,11 +897,73 @@ RANKERS
   opacity: 1;
   pointer-events: all;
 }
+/* ------------------
+TESTIMONIAL
+---------------- */
 
+.test-head{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
+.test-card{
+  /* background-color:var(--kappel) ; */
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  /* width: 1300px; */
+  border-radius: 10px;
+  margin: 20px;
+  padding: 20px;
+}
+.profile-pic>img{
+  height: 130px;
+  width: auto;
+}
+.author{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.test-description{
+  color: var(--kappel);
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  width: 70%;
+  align-self: center;
+}
 
+.quote {
+  width: 25px;
+}
 
+.quote-top{
+  margin-right: 800px;
+}
+.quote-bottom{
+  margin-left: 750px;
 
+}
+
+.test-Scroll{
+  display: flex;
+  flex-direction: row;
+  /* gap: 10px; */
+  overflow: scroll;
+  scrollbar-width: none;
+  width: 100%;
+
+}
+.test-div{
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+  align-items: center;
+  justify-content: center;
+}
 /*-----------------------------------*\
   #MEDIA QUERIES
 \*-----------------------------------*/
