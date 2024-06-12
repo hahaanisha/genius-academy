@@ -74,3 +74,28 @@ document.querySelector('.play-btn').addEventListener('click', function() {
     //   // this.style.display='none';
     // }
   });
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    const items = document.querySelectorAll('.test-item');
+    let currentItem = 0;
+
+    function updateItems() {
+      items.forEach((item, index) => {
+        item.classList.toggle('active', index === currentItem);
+      });
+    }
+
+    prevBtn.addEventListener('click', () => {
+      currentItem = (currentItem === 0) ? items.length - 1 : currentItem - 1;
+      updateItems();
+    });
+
+    nextBtn.addEventListener('click', () => {
+      currentItem = (currentItem === items.length - 1) ? 0 : currentItem + 1;
+      updateItems();
+    });
+
+    updateItems(); // Initialize the first active item
+  });

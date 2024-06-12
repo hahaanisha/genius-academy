@@ -1517,3 +1517,47 @@ TESTIMONIAL
   align-self: center;
   gap: 5px;
 }
+
+.header {
+  position: sticky;
+  
+}
+
+/* arrows for testimonial: */
+
+.test-Scroll {
+  position: relative;
+  overflow: hidden;
+}
+
+.test-list {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.test-item {
+  min-width: 100%;
+  box-sizing: border-box;
+  display: none;
+}
+
+.test-item.active {
+  display: block;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
