@@ -110,6 +110,8 @@ body {
   color: var(--gray-web);
   font-size: 1.6rem;
   line-height: 1.75;
+  
+
 }
 
 :focus-visible { outline-offset: 4px; }
@@ -375,7 +377,7 @@ body {
   #HERO
 \*-----------------------------------*/
 
-.hero { padding-block-start: calc(var(--section-padding) + 80px); }
+.hero { padding-block-start: calc(var(--section-padding) + 0px); }
 
 .hero .container {
   display: grid;
@@ -1212,7 +1214,7 @@ TESTIMONIAL
    * HERO
    */
 
-  .hero { padding-block-start: calc(var(--section-padding) + 90px); }
+  .hero { padding-block-start: calc(var(--section-padding) + 0px); }
 
   .hero .container { gap: 50px; }
 
@@ -1457,7 +1459,7 @@ TESTIMONIAL
 
   /*** HERO*/
 
-  .hero { padding-block-start: calc(var(--section-padding) + 120px); }
+  .hero { padding-block-start: calc(var(--section-padding) + 0px); }
 
   .hero .container { gap: 80px; }
 

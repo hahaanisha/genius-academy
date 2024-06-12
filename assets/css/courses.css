@@ -106,7 +106,7 @@
   }
   
   body{
-    margin-top: 20px;
+    /* margin-top: 20px; */
   }
 
   
@@ -442,7 +442,7 @@ color: var(--kappel);
      * HERO
      */
   
-    .hero { padding-block-start: calc(var(--section-padding) + 90px); }
+    .hero { padding-block-start: calc(var(--section-padding) + 0px); }
   
     .hero .container { gap: 50px; }
   
@@ -669,7 +669,7 @@ color: var(--kappel);
        * spacing
        */
   
-      --section-padding: 120px;
+      /* --section-padding: 120px; */
   
     }
   
@@ -727,7 +727,7 @@ color: var(--kappel);
   
     /*** HERO*/
   
-    .hero { padding-block-start: calc(var(--section-padding) + 120px); }
+    .hero { padding-block-start: calc(var(--section-padding) + 0px); }
   
     .hero .container { gap: 80px; }
   
