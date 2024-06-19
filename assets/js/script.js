@@ -75,10 +75,13 @@ document.querySelector('.play-btn').addEventListener('click', function() {
     // }
   });
 
+
   document.addEventListener('DOMContentLoaded', () => {
     const prevBtn = document.getElementById('prevBtn');
     const nextBtn = document.getElementById('nextBtn');
     const items = document.querySelectorAll('.test-item');
+    const itemList = document.querySelector('.test-list');
+    
     let currentItem = 0;
 
     function updateItems() {
@@ -86,6 +89,11 @@ document.querySelector('.play-btn').addEventListener('click', function() {
         item.classList.toggle('active', index === currentItem);
       });
     }
+
+    // function updateItems() {
+    //   const offset = -currentItem * 100;
+    //   itemList.style.transform = `translateX(${offset}%)`;
+    // }
 
     prevBtn.addEventListener('click', () => {
       currentItem = (currentItem === 0) ? items.length - 1 : currentItem - 1;
@@ -99,3 +107,4 @@ document.querySelector('.play-btn').addEventListener('click', function() {
 
     updateItems(); // Initialize the first active item
   });
+
