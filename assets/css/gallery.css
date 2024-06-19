@@ -9,7 +9,12 @@ body {
 .section {
   padding-block: 50px;
 }
-.event-img > img {
+.galleryImg > img {
+  width: 420px;
+  height: auto;
+  border-radius: 10px;
+}
+.galleryImg1>img {
   width: 420px;
   height: auto;
   border-radius: 10px;
@@ -70,6 +75,22 @@ body {
   }
 }
 
+
+.lightboxOverlay {
+      background: rgba(0, 0, 0, 0.8) !important;
+    }
+    .lightbox .lb-close {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: transparent;
+      border: none;
+      color: white;
+      font-size: 30px;
+      cursor: pointer;
+    }
+
+
 /*-----------------------------------*\
     #MEDIA QUERIES
   \*-----------------------------------*/
@@ -77,12 +98,12 @@ body {
    * responsive for lesser than 575px screen
    */
 @media (max-width: 575px) {
-  .event-img > img {
+  .galleryImg > img {
     width: 300px;
     height: auto;
     animation: 7s slide alternate;
   }
-  .event-img1>img{
+  .galleryImg1>img{
     animation: 7s slide alternate-reverse;
   }
   .main-event-container {
@@ -123,12 +144,12 @@ body {
   /**
      * REUSED STYLE
      */
-     .event-img > img {
+     .galleryImg > img {
       width: 300px;
       height: auto;
       animation: 7s slide alternate;
     }
-    .event-img1>img{
+    .galleryImg1>img{
       animation: 7s slide alternate-reverse;
     }
     .main-event-container {
@@ -185,12 +206,12 @@ body {
     --fs-1: 4.6rem;
     --fs-2: 3.8rem;
   }
-  .event-img > img {
+  .galleryImg > img {
     width: 300px;
     height: auto;
     animation: 0s slide infinite alternate;
   }
-  .event-img1>img{
+  .galleryImg1>img{
     animation: 0s slide infinite alternate-reverse;
   }
   .main-event-container {
@@ -290,7 +311,7 @@ body {
     --section-padding: 120px;
   }
 
-  .event-img > img {
+  .galleryImg > img {
     width: 420px;
     height: auto;
     border-radius: 10px;

@@ -1534,7 +1534,7 @@ TESTIMONIAL
 
 .test-list {
   display: flex;
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out linear;
 }
 
 .test-item {
@@ -1558,8 +1558,13 @@ TESTIMONIAL
 
 .prev {
   left: 0;
+
 }
 
 .next {
   right: 0;
+}
+
+.fa-solid{
+  color: var(--kappel);
 }

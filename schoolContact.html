@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Genius Academy</title>
+    <meta name="title" content="Genius Academy">
+    <meta name="description" content="Best place for your child to ace any exam">
+
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+    <!-- logo -->
+    <link rel="website icon" type="png"  href="assets/images/logo-light.png">
+
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/contact.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&family=Poppins:wght@400;500&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body id="top">
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="./home.html" class="logo">
+        <img src="./assets/images/logo.png" width="162" height="50" alt="EduWeb logo">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="wrapper">
+          <a href="#" class="logo">
+            <img src="./assets/images/logo.png" width="162" height="50" alt="genius logo">
+          </a>
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <a href="./home.html" class="navbar-link" data-nav-link>Home</a>
+          </li>
+          
+          <li class="navbar-item">
+            <a href="./about.html" class="navbar-link" data-nav-link>About</a>
+          </li>
+          <li class="navbar-item">
+            <a href="./results.html" class="navbar-link" data-nav-link>Results</a>
+          </li>
+          <li class="navbar-item">
+            <a href="./courses.html" class="navbar-link" data-nav-link>Courses</a>
+          </li>
+          <li class="navbar-item">
+            <a href="./school.html" class="navbar-link" data-nav-link>School Section</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="./gallery.html" class="navbar-link" data-nav-link>Gallery</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="./faq.html" class="navbar-link" data-nav-link>FAQs</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="./contact.html" class="navbar-link" data-nav-link>Contact</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <div class="header-actions">
+
+        <button class="header-action-btn" aria-label="open menu" data-nav-toggler>
+          <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+    
+  <!-- main BODY SECTION -->
+  <section class="contact-body">
+    <div class="contact-content">
+        <h2>Leave us a <blue class="blue">Message</blue></h2>
+        <p>Feel free to reach out to us. Your inquiries are important to us, and we're here to assist you on your journey</p>
+    </div>
+    <div class="contact-container">
+        <div class="contact-info">
+            <div class="contact-box">
+                <div class="icon"><a href=""><i class="fa fa-map-marker" style="color: black;"></i></a></div>
+                <div class="contact-text">
+                    <h3>Address</h3>
+                    <p>Branches:<br><a href="" style="text-decoration: none;"><b>1. </b> Gunjai Darshan, Katemanivali Naka, Kalyan (E)</a><a href="" style="text-decoration: none;"><b>2. </b>2nd floor, Dream Makers, Above Vijay Sales, Station Road, Badlapur (East)</a></p>
+                </div>
+            </div>
+            <div class="contact-box">
+                <div class="icon"><a href="mailto:thanksyougenius@gmail.com"><i class="fa fa-envelope" style="color: black;"></i></a></div>
+                <div class="contact-text">
+                    <h3>Email</h3>
+                    <p>thanksyougenius@gmail.com</p>
+                </div>
+            </div>
+            <div class="contact-box">
+                <div class="icon"><i class="fa fa-phone"></i></div>
+                <div class="contact-text">
+                    <h3>Phone</h3>
+                    <p>9867970240</p>
+                </div>
+            </div>
+        </div>
+        <div class="contact-form">
+            <form action="" name="submit-to-google-sheet">
+                <h2>Connect with us</h2>
+                <div class="input-box">
+                    <input type="text" name="Name" required="required">
+                    <span>Full Name</span>
+                </div>
+                
+                <div class="input-box">
+                    <input type="tel"  name="Phone-Number" required="required">
+                    <span>Phone Number</span>
+                </div>
+                <div class="input-box">
+                  <input type="text" name="Email" required="required">
+                  <span>Email</span>
+              </div>
+                
+                <div class="input-box">
+                    <label for="branch">Branch:</label><br>
+                    <div class="radio-options">
+                        <input type="radio" id="kalyan" name="branch" value="kalyan" required>
+                        <label for="kalyan"> Kalyan</label>
+                        <!-- <input type="radio" id="badlapur" name="branch" value="badlapur">
+                        <label for="badlapur"> Badlapur</label> -->
+                    </div>
+                </div>
+                
+                <div class="input-box">
+                    <label for="standard">Standard:</label><br>
+                    <div class="radio-options">
+                        <input type="radio" id="eight" name="standard" value="8th" required>
+                        <label for="eight"> 8th</label>
+                        <input type="radio" id="nineth" name="standard" value="9th">
+                        <label for="nineth"> 9th</label>
+                        <input type="radio" id="tenth" name="standard" value="10th">
+                        <label for="tenth"> 10th</label>
+                    </div>
+                </div>
+                <div class="input-box">
+                    <!-- <label for="course">Course:</label><br> -->
+                    <div class="radio-options">
+                        <!-- <input type="radio" id="jee" name="course" value="jee" required>
+                        <label for="jee"> XI-XII+JEE</label>
+                        <input type="radio" id="neet" name="course" value="neet">
+                        <label for="neet"> XI-XII+NEET</label>
+                        <input type="radio" id="Boards" name="course" value="mhtcet">
+                        <label for="mhtcet">XI-XII</label>
+                        <input type="radio" id="jee" name="course" value="boards">
+                        <label for="boards">XII+JEE</label>
+                        <input type="radio" id="neet" name="course" value="boards">
+                        <label for="boards">XII+NEET</label> -->
+
+                    </div>
+                </div>
+                
+                <!-- <div class="input-box">
+                    <label for="address">Address:</label><br>
+                    <input type="text" id="address" name="address" required>
+                </div>
+                
+                <div class="input-box">
+                    <label for="pincode">Pincode:</label><br>
+                    <input type="text" id="pincode" name="pincode" pattern="[0-9]{6}" title="Please enter a 6-digit pincode" required>
+                </div> -->
+                
+                <div class="input-box">
+                    <input type="submit" name="" value="Send">
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+  <!-- FOOTER SECTION -->
+  <footer class="footer" id="footer" style="background-image: url('./assets/images/footer-bg.png')">
+
+    <div class="footer-top section">
+      <div class="container grid-list">
+
+        <div class="footer-brand">
+
+          <a href="./home.html" class="logo">
+            <img src="./assets/images/logo-light.png" width="162" height="50" alt="EduWeb logo">
+          </a>
+
+          <p class="footer-brand-text">
+            We, at Genius Academy, not only aim at providing you with the best guidance to shape up your career, but also aim at making it immune to the changing scenarios in the career.          </p>
+
+          <div class="wrapper">
+            <span class="span">Add:</span>
+
+            <address class="address">Kalyan & Badlapur</address>
+          </div>
+
+          <div class="wrapper">
+            <span class="span">Call:</span>
+
+            <a href="tel:+91 9867970240" class="footer-link">+91 9867970240</a>
+          </div>
+
+          <div class="wrapper">
+            <span class="span">Email:</span>
+
+            <a href="mailto:thanksyougenius@gmail.com" class="footer-link">thanksyougenius@gmail.com</a>
+          </div>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Online Platform</p>
+          </li>
+
+          <li>
+            <a href="./about.html" class="footer-link">About</a>
+          </li>
+
+          <li>
+            <a href="courses.html" class="footer-link">Courses</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">School Section</a>
+          </li>
+
+          <li>
+            <a href="gallery.html" class="footer-link">Events</a>
+          </li>
+
+          
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Links</p>
+          </li>
+
+          <li>
+            <a href="./contact.html" class="footer-link">Contact Us</a>
+          </li>
+
+          <li>
+            <a href="./gallery.html" class="footer-link">Gallery</a>
+          </li>
+
+
+          <li>
+            <a href="./faq.html" class="footer-link">FAQ's</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link"></a>
+          </li>
+
+        </ul>
+
+        <div class="footer-list">
+
+          <p class="footer-list-title">Contacts</p>
+
+          <!-- <p class="footer-list-text">
+            Enter your email address to register to our newsletter subscription
+          </p> -->
+
+          <!-- <form action="" class="newsletter-form">
+            <input type="email" name="email_address" placeholder="Your email" required class="input-field">
+
+            <button type="submit" class="btn has-before">
+              <span class="span">Subscribe</span>
+
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </form> -->
+
+          <ul class="social-list">
+
+            <li>
+              <a href="https://www.facebook.com/share/HeVv4yhx2RDNkm9w/?mibextid=qi2Omg" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.linkedin.com/company/geniusacademy-kalayn/" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.instagram.com/genius.academy_?igsh=NWloOWppdjd5c2Vp" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://youtube.com/@geniusg-kabsacademy161?si=vsCmtE2821SRJeW3" class="social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          © 2024 Genius Academy. All rights reserved.</a>
+        </p>
+        <center><b  class="developers">Developed & Designed with ❤️ by <a href="https://www.linkedin.com/in/tejas-gadge-8a395b258/"> Tejas Gadge </a> & <a href="https://www.linkedin.com/in/anisha-shankar-/"> Anisha Shankar</a></b></center>
+
+      </div>
+    </div>
+
+  </footer>
+
+  <!--- #BACK TO TOP-->
+  <a href="#top" class="back-top-btn" aria-label="back top top" data-back-top-btn>
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
+
+  <script src="./assets/js/script.js" defer></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyckcM8WOthsqWcDanN-l-T_SD1jooZPT9WscGXc19yYWeKEBWk-slL3xe4Kyhjmjm8/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
