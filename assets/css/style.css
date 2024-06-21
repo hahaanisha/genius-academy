@@ -1564,7 +1564,7 @@ TESTIMONIAL
 .next {
   right: 0;
 }
-<<<<<<< HEAD
+
 /* Mobile Styles */
 @media only screen and (max-width: 600px) {
   .test-Scroll {
@@ -1631,3 +1631,4 @@ TESTIMONIAL
     padding: 0 10px;
   }
 
+}
