@@ -108,3 +108,8 @@ document.querySelector('.play-btn').addEventListener('click', function() {
     updateItems(); // Initialize the first active item
   });
 
+
+
+
+
+
