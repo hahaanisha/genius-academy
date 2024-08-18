@@ -209,7 +209,7 @@
         <div class="footer-brand">
 
           <a href="./home.html" class="logo">
-            <img src="./assets/images/logo-light.png" width="162" height="50" alt="EduWeb logo">
+            <img src="./assets/images/OfficialLogo.png" width="162" height="50" alt="EduWeb logo">
           </a>
 
           <p class="footer-brand-text">
@@ -371,7 +371,10 @@
     form.addEventListener('submit', e => {
       e.preventDefault()
       fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => console.log('Success!', response))
+        .then(response => {
+          form.reset();
+          alert("Thank you for registering!");
+        } )
         .catch(error => console.error('Error!', error.message))
     })
   </script>
