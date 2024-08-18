@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
         integrity="sha384-o4/JFADzlWHA7EBC1euevfIA4Les0xCZvQbz58F4Gf8y1SssjZ6Ln5u6tU4CC/iY" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="./assets/css/contact.css">
+
 </head>
 
 <body id="top">
@@ -93,10 +95,68 @@
     </header>
 
     <!-- MAIN BODY: -->
-    <div class="container-body">
+    <!-- <div class="container-body">
         <img class="group-photo" src="assets/images/coming soon.jpg" alt="Group Photo">
         
+    </div> -->
+
+    <!-- main BODY SECTION -->
+  <section class="contact-body">
+    <div class="contact-content">
+        <h2>Register for  <b><blue class="blue">G-SET</blue></b></h2>
     </div>
+    <div class="contact-container">
+        <div class="contact-form">
+            <form action="" name="submit-to-google-sheet">
+                <!-- <h2>Connect with us</h2> -->
+                <div class="input-box">
+                    <input type="text" name="Name" required="required">
+                    <span>Full Name</span>
+                </div>
+                
+                <div class="input-box">
+                    <input type="tel"  name="Phone-Number" required="required">
+                    <span>Phone Number</span>
+                </div>
+                <div class="input-box">
+                  <input type="text" name="School-Name" required="required">
+                  <span>School Name</span>
+              </div>
+                
+                <div class="input-box">
+                    <label for="branch">School Location:</label><br>
+                    <div class="radio-options">
+                        <input type="radio" id="kalyan" name="branch" value="kalyan" required>
+                        <label for="kalyan"> Kalyan</label>
+                        <input type="radio" id="badlapur" name="branch" value="badlapur">
+                        <label for="badlapur"> Badlapur</label>
+                    </div>
+                </div>
+                
+                <div class="input-box">
+                    <label for="standard">Standard:</label><br>
+                    <div class="radio-options">
+                        <input type="radio" id="nineth" name="standard" value="9th" required>
+                        <label for="nineth"> 9th</label>
+                        <input type="radio" id="tenth" name="standard" value="10th">
+                        <label for="tenth"> 10th</label>
+                    </div>
+                </div>
+
+                <div class="input-box">
+                    <input type="text" name="Residential-Address" required="required">
+                    <span>Residential Address</span>
+                </div>
+
+                
+                
+                <div class="input-box">
+                    <input type="submit" name="" value="Send">
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
 
     <!--- #BACK TO TOP-->
     <a href="#top" class="back-top-btn" aria-label="back top top" data-back-top-btn>
@@ -183,6 +243,17 @@
     <script src="./assets/js/script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyckcM8WOthsqWcDanN-l-T_SD1jooZPT9WscGXc19yYWeKEBWk-slL3xe4Kyhjmjm8/exec'
+        const form = document.forms['submit-to-google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
 </body>
 
 </html>
