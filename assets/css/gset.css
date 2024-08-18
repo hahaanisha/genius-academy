@@ -1,0 +1,180 @@
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f8f9fa;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.banner img {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   max-width: 80%;
+   background-size: cover ;
+}
+
+.prizes-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.prize-card {
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: .375rem;
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.prize-card img {
+    max-width: 300px;
+}
+
+.prize-caption {
+    color:  hsl(212, 75%, 41%);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.about-section img {
+    max-width: 50%;
+    height: auto;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.prize-row {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#gset_font{
+    color: hsl(212, 75%, 41%);
+}
+
+.banner-buttons{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#Gset_blue{
+    color:  hsl(212, 75%, 41%);
+}
+
+#Gset_red{
+    color: red;
+}
+
+.gset_list{
+    display: flex;
+}
+
+.checkIcon{
+    color: hsl(42, 94%, 55%);
+}
+
+.venue{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.details{
+    text-align: center;
+}
+
+
+.venue>img{
+    width: 800px;
+}
+/*-----------------------------------*\
+  #MEDIA QUERIES
+\*-----------------------------------*/
+/**
+ * responsive for lesser than 575px screen
+ */
+ @media (max-width: 575px) {
+    #vedantu{
+        display: none;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .venue>img{
+        width: 350px;
+    }
+ }
+
+ 
+/**
+ * responsive for large than 575px screen
+ */
+
+@media (min-width: 575px) {
+    #vedantu{
+        display: none;
+    }
+}
+
+
+
+/**
+ * responsive for large than 768px screen
+ */
+
+ @media (min-width: 768px) {
+    #vedantu{
+        display: none;
+    }
+ }
+
+
+/**
+ * responsive for large than 992px screen
+ */
+
+ @media (min-width: 992px) {
+    #vedantu{
+        display: none;
+    }
+ }
+
+ 
+/**
+ * responsive for large than 1200px screen
+ */
+
+@media (min-width: 1200px) {
+    #vedantu{
+        display: none;
+    }
+}
+
