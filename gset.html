@@ -188,14 +188,14 @@
              <!-- Prizes for 10th Standard -->
              <div class="col-md-4 prize-row">
                  <div class="prize-card">
-                     <img src="./assets/images/4.png"
+                     <img src="./assets/images/10-1.png"
                          alt="Electric Cycle">
                      <div class="prize-caption">1st Prize: Electric Cycle + Scholarship worth ₹1,00,000/-</div>
                  </div>
              </div>
              <div class="col-md-4 prize-row">
                  <div class="prize-card">
-                     <img src="./assets/images/5.png" alt="Laptop">
+                     <img src="./assets/images/10-2.png" alt="Laptop">
                      <div class="prize-caption">2nd Prize: Laptop + Scholarship worth ₹75,000/-</div>
                  </div>
              </div>
@@ -214,7 +214,6 @@
         <h2 id="Gset_blue">Exam Details</h2>
         <div class="details">
             Date of Exam: 29th September 2024<br>
-Reporting Time: 11:00 AM (mIght Change)<br>
 No. of Questions: 100<br>
 Subjects: Maths, Science & Logical Reasoning<br>
 Standard: 9th / 10th<br>
@@ -238,7 +237,7 @@ Time: 1:30 Hours<br>
     </div>
     <div class="contact-container">
         <div class="contact-form">
-            <form action="" name="submit-to-google-sheet">
+            <form method="post" action="https://script.google.com/macros/s/AKfycbxNfUdEE7BC2LXH5iw5VJyqPiPtaRBKJtFWfBof0TiH8sxtGoEgfuxjucnz96c4Rbg1/exec" name="submit-to-google-sheet">
                 <!-- <h2>Connect with us</h2> -->
                 <div class="input-box">
                     <input type="text" name="Name" required="required">
@@ -261,6 +260,9 @@ Time: 1:30 Hours<br>
                         <label for="kalyan"> Kalyan</label>
                         <input type="radio" id="badlapur" name="branch" value="badlapur">
                         <label for="badlapur"> Badlapur</label>
+                        <input type="radio" id="Others" name="branch" value="Others">
+                        <label for="Others"> Others</label>
+                       
                     </div>
                 </div>
                 
@@ -271,6 +273,7 @@ Time: 1:30 Hours<br>
                         <label for="nineth"> 9th</label>
                         <input type="radio" id="tenth" name="standard" value="10th">
                         <label for="tenth"> 10th</label>
+                        
                     </div>
                 </div>
 
@@ -285,6 +288,10 @@ Time: 1:30 Hours<br>
                     <input type="submit" name="" value="Send">
                 </div>
             </form>
+            <!-- Success message -->
+            <div id="success-message" style="display:none; color:green;">
+                Your registration was successful! Thank you.
+            </div>
         </div>
     </div>
 </section>
@@ -300,7 +307,7 @@ Time: 1:30 Hours<br>
             <div class="container grid-list">
                 <div class="footer-brand">
                     <a href="./home.html" class="logo">
-                        <img src="./assets/images/logo-light.png" width="162" height="50" alt="EduWeb logo">
+                        <img src="./assets/images/OfficialLogo.png" width="162" height="50" alt="EduWeb logo">
                     </a>
                     <p class="footer-brand-text">We, at Genius Academy, not only aim at providing you with the best
                         guidance to shape up your career, but also aim at making it immune to the changing scenarios in
@@ -375,8 +382,8 @@ Time: 1:30 Hours<br>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbzDEPNtUqa4epB3EthdEI5oqPQUn1lNB2-YzWxRVLzsfbFop23vOY31Rq701Th11LfS/exec'
+    <!-- <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxNfUdEE7BC2LXH5iw5VJyqPiPtaRBKJtFWfBof0TiH8sxtGoEgfuxjucnz96c4Rbg1/exec'
         const form = document.forms['submit-to-google-sheet']
       
         form.addEventListener('submit', e => {
@@ -385,7 +392,32 @@ Time: 1:30 Hours<br>
             .then(response => console.log('Success!', response))
             .catch(error => console.error('Error!', error.message))
         })
-      </script>
+      </script> -->
+
+      <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxNfUdEE7BC2LXH5iw5VJyqPiPtaRBKJtFWfBof0TiH8sxtGoEgfuxjucnz96c4Rbg1/exec';
+        const form = document.forms['submit-to-google-sheet'];
+        const successMessage = document.getElementById('success-message'); // Reference to the success message div
+    
+        form.addEventListener('submit', e => {
+            e.preventDefault(); // Prevent the default form submission
+    
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)}) // Submit the form data
+                .then(response => {
+                    form.reset(); // Reset the form fields after successful submission
+                    alert("Thank you for registering!"); // Show the success message
+    
+                    
+                    setTimeout(() => {
+                        successMessage.style.display = 'none'; // Hide the message after 5 seconds
+                    }, 5000);
+                })
+                .catch(error => console.error('Error!', error.message)); // Log any errors to the console
+        });
+    </script>
+    
+
+      
 </body>
 
 </html>
