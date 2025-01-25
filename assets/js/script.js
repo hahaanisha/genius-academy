@@ -112,11 +112,11 @@ document.querySelector('.play-btn').addEventListener('click', function() {
 
 
 
-  window.onload = function() {
-    document.getElementById('popup').style.display = 'flex';
-};
+//   window.onload = function() {
+//     document.getElementById('popup').style.display = 'flex';
+// };
 
-function closePopup() {
-    document.getElementById('popup').style.display = 'none';
-}
+// function closePopup() {
+//     document.getElementById('popup').style.display = 'none';
+// }
 
