@@ -1,0 +1,136 @@
+.standards{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.standard-box{
+    width: 200px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: .375rem;
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.standard-box > h3{
+    color: white;
+}
+#jee{
+    background-color: #ea7373;
+}
+#neet{
+    background-color: hsl(42, 94%, 55%);
+}
+#mht-cet{
+    background-color:hsl(212, 75%, 41%);
+}
+
+.title > h1{
+    color: var(--kappel);
+}
+.title > p{
+    color: var(--selective-yellow);
+}
+.title > h3{
+    color: #ea7373;
+}
+
+
+
+/*-----------------------------------*\
+  #MEDIA QUERIES
+\*-----------------------------------*/
+/**
+ * responsive for lesser than 575px screen
+ */
+ @media (max-width: 575px) {
+    .standards{
+        padding-top: 5px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+ }
+
+ 
+/**
+ * responsive for large than 575px screen
+ */
+
+@media (min-width: 575px) {
+    .standards{
+        padding-top: 15px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+}
+
+
+
+/**
+ * responsive for large than 768px screen
+ */
+
+ @media (min-width: 768px) {
+    .standards{
+        padding-top: 15px;
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+ }
+
+
+/**
+ * responsive for large than 992px screen
+ */
+
+ @media (min-width: 992px) {
+    .standards{
+        padding-top: 20px;
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+ }
+
+ 
+/**
+ * responsive for large than 1200px screen
+ */
+
+@media (min-width: 1200px) {
+    .standards{
+        padding-top: 30px;
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+}
+
